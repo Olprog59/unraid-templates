@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>SearchAndSortMovies</Name>
+  <Repository>olprog/search-and-sort-movies</Repository>
+  <Registry>https://hub.docker.com/repository/docker/olprog/search-and-sort-movies</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>This application will allow you to sort and to clean name movies and series</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://imgur.com/a/dAWLGHm</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1622028422</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>This application will allow you to sort and to clean name movies and series</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/dlna/be_sorted</HostDir>
+      <ContainerDir>/be_sorted</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/dlna/series/</HostDir>
+      <ContainerDir>/series</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/dlna/movies/</HostDir>
+      <ContainerDir>/movies</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Be Sorted" Target="/be_sorted" Default="/mnt/user/dlna/be_sorted" Mode="rw" Description="Conteneur Path: /be_sorted" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/dlna/be_sorted</Config>
+  <Config Name="Series" Target="/series" Default="/mnt/user/dlna/series/" Mode="rw" Description="Conteneur Path: /series" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/dlna/series/</Config>
+  <Config Name="Movies" Target="/movies" Default="" Mode="rw" Description="Conteneur Path: /movies" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/dlna/movies/</Config>
+</Container>
