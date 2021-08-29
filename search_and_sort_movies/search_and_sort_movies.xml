@@ -1,33 +1,33 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>SearchAndSortMovies</Name>
+  <Name>search-and-sort-movies</Name>
   <Repository>olprog/search-and-sort-movies</Repository>
-  <Registry>https://hub.docker.com/repository/docker/olprog/search-and-sort-movies</Registry>
+  <Registry>https://hub.docker.com/r/olprog/search-and-sort-movies/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://hub.docker.com/r/olprog/search-and-sort-movies/</Support>
   <Project/>
-  <Overview>This application will allow you to sort and to clean name movies and series</Overview>
-  <Category>Tools:</Category>
+  <Overview>This application will allow you to sort and to clean name movies and series.   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://imgur.com/a/dAWLGHm</Icon>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1622028422</DateInstalled>
+  <DateInstalled>1630272360</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>This application will allow you to sort and to clean name movies and series</Description>
+  <Description>This application will allow you to sort and to clean name movies and series.   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish/>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/dlna/be_sorted</HostDir>
+      <HostDir>/mnt/user/dlna/be_sorted/</HostDir>
       <ContainerDir>/be_sorted</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -44,7 +44,7 @@
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Be Sorted" Target="/be_sorted" Default="/mnt/user/dlna/be_sorted" Mode="rw" Description="Conteneur Path: /be_sorted" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/dlna/be_sorted</Config>
-  <Config Name="Series" Target="/series" Default="/mnt/user/dlna/series/" Mode="rw" Description="Conteneur Path: /series" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/dlna/series/</Config>
-  <Config Name="Movies" Target="/movies" Default="" Mode="rw" Description="Conteneur Path: /movies" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/dlna/movies/</Config>
+  <Config Name="be_sorted" Target="/be_sorted" Default="/mnt/user/dlna/be_sorted/" Mode="rw" Description="Conteneur Path: /be_sorted" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/dlna/be_sorted/</Config>
+  <Config Name="Series" Target="/series" Default="/mnt/user/dlna/series/" Mode="rw" Description="Conteneur Path: /series" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/dlna/series/</Config>
+  <Config Name="Movies" Target="/movies" Default="/mnt/user/dlna/movies/" Mode="rw" Description="Conteneur Path: /movies" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/dlna/movies/</Config>
 </Container>
