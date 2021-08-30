@@ -13,11 +13,11 @@
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <Icon>https://imgur.com/a/dAWLGHm</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1630272360</DateInstalled>
+  <DateInstalled>1630301238</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>This application will allow you to sort and to clean name movies and series.   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
@@ -44,7 +44,7 @@
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="be_sorted" Target="/be_sorted" Default="/mnt/user/dlna/be_sorted/" Mode="rw" Description="Conteneur Path: /be_sorted" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/dlna/be_sorted/</Config>
+  <Config Name="Be Sorted" Target="/be_sorted" Default="/mnt/user/dlna/be_sorted/" Mode="rw" Description="Conteneur Path: /be_sorted" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/dlna/be_sorted/</Config>
   <Config Name="Series" Target="/series" Default="/mnt/user/dlna/series/" Mode="rw" Description="Conteneur Path: /series" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/dlna/series/</Config>
   <Config Name="Movies" Target="/movies" Default="/mnt/user/dlna/movies/" Mode="rw" Description="Conteneur Path: /movies" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/dlna/movies/</Config>
 </Container>
