@@ -9,18 +9,40 @@
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/olprog/search-and-sort-movies/</Support>
   <Project/>
-  <Overview>This application will allow you to sort and to clean name movies and series.   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
-  <Category/>
+  <Overview>This application will allow you to sort films and series. It will clean up the names and move them to the folder you want.&#xD;
+&#xD;
+Ex:&#xD;
+&#xD;
+    /be_sorted/movie_sam_2020_to$http://sAm.EN-01.mkv =&amp;gt; /movies/movie-sam-2020.mkv&#xD;
+    /be_sorted/serie_S1_e12_qWerTy_aZerty.mKv =&amp;gt; /series/fringe/season-1/fringe-S01-E12.mkv&#xD;
+&#xD;
+Choose your Volumes :&#xD;
+&#xD;
+    /be_sorted&#xD;
+    /movies&#xD;
+    /series</Overview>
+  <Category>Other:</Category>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://imgur.com/a/dAWLGHm</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1630399868</DateInstalled>
+  <DateInstalled>1630400181</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>This application will allow you to sort and to clean name movies and series.   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Description>This application will allow you to sort films and series. It will clean up the names and move them to the folder you want.&#xD;
+&#xD;
+Ex:&#xD;
+&#xD;
+    /be_sorted/movie_sam_2020_to$http://sAm.EN-01.mkv =&amp;gt; /movies/movie-sam-2020.mkv&#xD;
+    /be_sorted/serie_S1_e12_qWerTy_aZerty.mKv =&amp;gt; /series/fringe/season-1/fringe-S01-E12.mkv&#xD;
+&#xD;
+Choose your Volumes :&#xD;
+&#xD;
+    /be_sorted&#xD;
+    /movies&#xD;
+    /series</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish/>
