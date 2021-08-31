@@ -24,11 +24,11 @@ Choose your Volumes :&#xD;
   <Category>Other:</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://imgur.com/a/dAWLGHm</Icon>
+  <Icon>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/search-and-sort-movies/search-and-sort-movies.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1630400181</DateInstalled>
+  <DateInstalled>1630400368</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>This application will allow you to sort films and series. It will clean up the names and move them to the folder you want.&#xD;
