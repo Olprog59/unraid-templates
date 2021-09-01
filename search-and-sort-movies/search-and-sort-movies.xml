@@ -40,9 +40,9 @@ Ex:&#xD;
 &#xD;
 Choose your Volumes :&#xD;
 &#xD;
-    /be_sorted&#xD;
-    /movies&#xD;
-    /series</Description>
+    /be_sorted   =&amp;gt; Folder where you have to put the series or films to be sorted&#xD;
+    /movies      =&amp;gt; Folder that will receive the sorted films from be_sorted.&#xD;
+    /series      =&amp;gt; Folder that will receive the sorted series from be_sorted.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish/>
