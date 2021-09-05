@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Docker-WebUI</Name>
+  <Repository>olprog/unraid-docker-webui</Repository>
+  <Registry>https://hub.docker.com/r/olprog/unraid-docker-webui</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/olprog/unraid-docker-webui</Support>
+  <Project/>
+  <Overview>Plus tard</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:1111]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/alexta69/metube/master/favicon/android-chrome-384x384.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1630872319</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Description>Plus tard</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>1111</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/var/run/docker.sock</HostDir>
+      <ContainerDir>/var/run/docker.sock</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="WebUI" Target="8080" Default="1111" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1111</Config>
+  <Config Name="docker" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/var/run/docker.sock</Config>
+</Container>
