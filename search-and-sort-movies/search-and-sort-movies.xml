@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/olprog/search-and-sort-movies/</Support>
+  <Support>https://forums.unraid.net/topic/113419-support-search-and-sort-movies/</Support>
   <Project/>
   <Overview>This application will allow you to sort films and series. It will clean up the names and move them to the folder you want.&#xD;
 &#xD;
@@ -23,14 +23,15 @@ Choose your Volumes :&#xD;
     /series</Overview>
   <Category>Other:</Category>
   <WebUI/>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/search-and-sort-movies/search-and-sort-movies.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/search-and-sort-movies/search-and-sort-movies.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1630400368</DateInstalled>
+  <DateInstalled>1631002122</DateInstalled>
   <DonateText/>
   <DonateLink/>
+  <Requires/>
   <Description>This application will allow you to sort films and series. It will clean up the names and move them to the folder you want.&#xD;
 &#xD;
 Ex:&#xD;
@@ -40,9 +41,9 @@ Ex:&#xD;
 &#xD;
 Choose your Volumes :&#xD;
 &#xD;
-    /be_sorted   =&amp;gt; Folder where you have to put the series or films to be sorted&#xD;
-    /movies      =&amp;gt; Folder that will receive the sorted films from be_sorted.&#xD;
-    /series      =&amp;gt; Folder that will receive the sorted series from be_sorted.</Description>
+    /be_sorted&#xD;
+    /movies&#xD;
+    /series</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish/>
