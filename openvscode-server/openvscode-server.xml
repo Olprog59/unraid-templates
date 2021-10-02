@@ -13,7 +13,9 @@
 &#xD;
 Luckily, in 2019 the VS Code team started to refactor its architecture to support a browser-based working mode. While this architecture has been adopted by Gitpod and GitHub, the important bits have not been open-sourced, until now. As a result, many people in the community still use the old, hard to maintain and error-prone approach.&#xD;
 &#xD;
-At Gitpod, we've been asked a lot about how we do it. So we thought we might as well share the minimal set of changes needed so people can rely on the latest version of VS Code, have a straightforward upgrade path and low maintenance effort.</Overview>
+At Gitpod, we've been asked a lot about how we do it. So we thought we might as well share the minimal set of changes needed so people can rely on the latest version of VS Code, have a straightforward upgrade path and low maintenance effort.&#xD;
+&#xD;
+&#xA0;&#x26A0;&#xFE0F; Be careful, each time you create or update the docker, everything is reset (except the share folder). </Overview>
   <Category>Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL/>
@@ -21,7 +23,7 @@ At Gitpod, we've been asked a lot about how we do it. So we thought we might as 
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1633174835</DateInstalled>
+  <DateInstalled>1633175043</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -29,7 +31,9 @@ At Gitpod, we've been asked a lot about how we do it. So we thought we might as 
 &#xD;
 Luckily, in 2019 the VS Code team started to refactor its architecture to support a browser-based working mode. While this architecture has been adopted by Gitpod and GitHub, the important bits have not been open-sourced, until now. As a result, many people in the community still use the old, hard to maintain and error-prone approach.&#xD;
 &#xD;
-At Gitpod, we've been asked a lot about how we do it. So we thought we might as well share the minimal set of changes needed so people can rely on the latest version of VS Code, have a straightforward upgrade path and low maintenance effort.</Description>
+At Gitpod, we've been asked a lot about how we do it. So we thought we might as well share the minimal set of changes needed so people can rely on the latest version of VS Code, have a straightforward upgrade path and low maintenance effort.&#xD;
+&#xD;
+&#xA0;&#x26A0;&#xFE0F; Be careful, each time you create or update the docker, everything is reset (except the share folder). </Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
