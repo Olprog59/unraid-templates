@@ -17,11 +17,11 @@ At Gitpod, we've been asked a lot about how we do it. So we thought we might as 
   <Category>Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/openvscode-server/vscode.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1633174755</DateInstalled>
+  <DateInstalled>1633174835</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
