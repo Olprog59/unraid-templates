@@ -11,7 +11,12 @@
   <Project/>
   <Overview>This application will list all dockers that have a WebUI.&#xD;
 &#xD;
-https://raw.githubusercontent.com/Olprog59/unraid-templates/main/docker-webui/screen.png</Overview>
+https://raw.githubusercontent.com/Olprog59/unraid-templates/main/docker-webui/screen.png&#xD;
+&#xD;
+----------------------------&#xD;
+Update 31 Octobre 2021:&#xD;
+&#xD;
+Add Variable CIRCLE [yes/no] #This variable allows you to set or remove the coloured circles [yes/no].</Overview>
   <Category>Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/docker-webui/docker-webui.xml</TemplateURL>
@@ -19,13 +24,18 @@ https://raw.githubusercontent.com/Olprog59/unraid-templates/main/docker-webui/sc
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1631027800</DateInstalled>
+  <DateInstalled>1635699047</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Description>This application will list all dockers that have a WebUI.&#xD;
 &#xD;
-https://raw.githubusercontent.com/Olprog59/unraid-templates/main/docker-webui/screen.png</Description>
+https://raw.githubusercontent.com/Olprog59/unraid-templates/main/docker-webui/screen.png&#xD;
+&#xD;
+----------------------------&#xD;
+Update 31 Octobre 2021:&#xD;
+&#xD;
+Add Variable CIRCLE [yes/no] #This variable allows you to set or remove the coloured circles [yes/no].</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -43,8 +53,15 @@ https://raw.githubusercontent.com/Olprog59/unraid-templates/main/docker-webui/sc
       <Mode>ro</Mode>
     </Volume>
   </Data>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Value>yes</Value>
+      <Name>CIRCLE</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
   <Labels/>
+  <Config Name="circle" Target="CIRCLE" Default="no" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">yes</Config>
   <Config Name="WebUI" Target="8080" Default="1111" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1111</Config>
   <Config Name="data" Target="/data" Default="/var/local/emhttp/plugins/dynamix.docker.manager" Mode="ro" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/var/local/emhttp/plugins/dynamix.docker.manager</Config>
 </Container>
