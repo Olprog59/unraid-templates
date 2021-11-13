@@ -20,6 +20,11 @@ A few things that are essential for this application to work properly:&#xD;
 Have fun.&#xD;
 &#xA0;&#xD;
 ----------------------- Update ---------------------------&#xD;
+13 / 11 / 2021&#xD;
+  - Adding zoom in/out&#xD;
+  - Adding a filter&#xD;
+  - Add a HOST environment variable to set your HOSTNAME or dns (if ports are open)&#xD;
+&#xD;
 07 / 11 / 2021&#xD;
 &#xA0; - Fixed problem with URL parameter.&#xD;
 http://IP:PORT/vnc.html?resize=remote&amp;amp;amp;host=192.168.0.4&amp;amp;amp;port=6080&amp;amp;amp;autoconnect=1&#xD;
@@ -43,11 +48,12 @@ Thanks to @Meles Meles.&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1636308384</DateInstalled>
+  <DateInstalled>1636815764</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="circle" Target="CIRCLE" Default="no" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">yes</Config>
   <Config Name="WebUI" Target="8080" Default="1111" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1111</Config>
+  <Config Name="HOST" Target="HOST" Default="webui.local" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">saminthedark.local</Config>
   <Config Name="data" Target="/data" Default="/var/local/emhttp/plugins/dynamix.docker.manager" Mode="ro" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/var/local/emhttp/plugins/dynamix.docker.manager</Config>
 </Container>
