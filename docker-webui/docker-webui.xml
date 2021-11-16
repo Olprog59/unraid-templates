@@ -54,6 +54,6 @@ Thanks to @Meles Meles.&#xD;
   <Requires/>
   <Config Name="circle" Target="CIRCLE" Default="no" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">yes</Config>
   <Config Name="WebUI" Target="8080" Default="1111" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1111</Config>
-  <Config Name="HOST" Target="HOST" Default="webui.local" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">saminthedark.local</Config>
+  <Config Name="HOST" Target="HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="data" Target="/data" Default="/var/local/emhttp/plugins/dynamix.docker.manager" Mode="ro" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/var/local/emhttp/plugins/dynamix.docker.manager</Config>
 </Container>
