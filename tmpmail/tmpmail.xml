@@ -8,7 +8,7 @@
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/117458-support-tmpmail/</Support>
-  <Project>https://forums.unraid.net/topic/117458-support-tmpmail/</Project>
+  <Project>https://github.com/sdushantha/tmpmail</Project>
   <Overview>tmpmail is a command line utility written in POSIX sh that allows you to create a temporary email address and receive emails to the temporary email address. It uses 1secmail's API to receive emails.&#xD;
 &#xD;
 By default w3m is used to render the HTML emails on the terminal.&#xD;
@@ -61,7 +61,7 @@ shows the email message with specified ID.&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1639912305</DateInstalled>
+  <DateInstalled>1639912467</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
