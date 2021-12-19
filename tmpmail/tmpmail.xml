@@ -16,8 +16,8 @@ By default w3m is used to render the HTML emails on the terminal.&#xD;
 Check the log for the temporary email if not filled in.&#xD;
 &#xD;
 Command Example:&#xD;
-- $tmpmail -r&#xD;
-- $tmpmail 2533131&#xD;
+- $tmpmail -r # read last email&#xD;
+- $tmpmail 2533131 # read email with id 2533131&#xD;
 &#xD;
 https://www.1secmail.com&#xD;
 https://github.com/sdushantha/tmpmail&#xD;
@@ -61,7 +61,7 @@ shows the email message with specified ID.&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1639873561</DateInstalled>
+  <DateInstalled>1639912305</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
