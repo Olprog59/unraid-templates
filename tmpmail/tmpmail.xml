@@ -61,10 +61,10 @@ shows the email message with specified ID.&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1639873447</DateInstalled>
+  <DateInstalled>1639873561</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="EMAIL" Target="EMAIL" Default="tmpmail@1secmail.org" Mode="" Description="If not filled in, generate email auto.if you wish to indicate a personalized email, dns: 1secmail.[com,org,net] / other choices : https://www.1secmail.com" Type="Variable" Display="always" Required="false" Mask="false">olprog@1secmail.org</Config>
+  <Config Name="EMAIL" Target="EMAIL" Default="" Mode="" Description="If not filled in, generate email auto.if you wish to indicate a personalized email, dns: 1secmail.[com,org,net] / other choices : https://www.1secmail.com" Type="Variable" Display="always" Required="false" Mask="false">olprog@1secmail.org</Config>
   <Config Name="TimeZone" Target="TZ" Default="Europe/Paris" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">Europe/Paris</Config>
 </Container>
