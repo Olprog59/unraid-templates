@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Temp_Mail</Name>
+  <Repository>olprog/tmpmail</Repository>
+  <Registry>https://hub.docker.com/repository/docker/olprog/tmpmail</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/117458-support-tmpmail/</Support>
+  <Project>https://forums.unraid.net/topic/117458-support-tmpmail/</Project>
+  <Overview>tmpmail is a command line utility written in POSIX sh that allows you to create a temporary email address and receive emails to the temporary email address. It uses 1secmail's API to receive emails.&#xD;
+&#xD;
+By default w3m is used to render the HTML emails on the terminal.&#xD;
+&#xD;
+Check the log for the temporary email if not filled in.&#xD;
+&#xD;
+Command Example:&#xD;
+- $tmpmail -r&#xD;
+- $tmpmail 2533131&#xD;
+&#xD;
+https://www.1secmail.com&#xD;
+https://github.com/sdushantha/tmpmail&#xD;
+&#xD;
+Dependencies: &#xD;
+- w3m &#xD;
+- curl&#xD;
+- jq&#xD;
+&#xD;
+$ tmpmail --help&#xD;
+tmpmail&#xD;
+tmpmail -h | --version&#xD;
+tmpmail -g &#xD;
+tmpmail  -r | ID&#xD;
+&#xD;
+When called with no option and no argument, tmpmail lists the messages in&#xD;
+the inbox and their numeric IDs.  When called with one argument, tmpmail&#xD;
+shows the email message with specified ID.&#xD;
+&#xD;
+-b, --browser BROWSER&#xD;
+        Specify BROWSER (default: w3m) that is used to render the HTML of&#xD;
+        the email&#xD;
+-g, --generate &#xD;
+        Generate a new email address, either the specified ADDRESS, or&#xD;
+        randomly create one&#xD;
+-h, --help&#xD;
+        Show help&#xD;
+-r, --recent&#xD;
+        View the most recent email message&#xD;
+-t, --text&#xD;
+        View the email as raw text, where all the HTML tags are removed.&#xD;
+        Without this option, HTML is used.&#xD;
+--version&#xD;
+        Show version&#xD;
+&#xD;
+</Overview>
+  <Category>Network:Messenger</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/tmpmail/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1639873447</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="EMAIL" Target="EMAIL" Default="tmpmail@1secmail.org" Mode="" Description="If not filled in, generate email auto.if you wish to indicate a personalized email, dns: 1secmail.[com,org,net] / other choices : https://www.1secmail.com" Type="Variable" Display="always" Required="false" Mask="false">olprog@1secmail.org</Config>
+  <Config Name="TimeZone" Target="TZ" Default="Europe/Paris" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">Europe/Paris</Config>
+</Container>
