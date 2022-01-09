@@ -20,6 +20,10 @@ A few things that are essential for this application to work properly:&#xD;
 Have fun.&#xD;
 &#xA0;&#xD;
 ----------------------- Update ---------------------------&#xD;
+09 / 01 / 2022&#xD;
+  - Happy New Year&#xD;
+  - Add UNRAID_IP: This will determine if a container has its own IP or not. Fill in only if HOST is filled in.&#xD;
+&#xD;
 13 / 11 / 2021&#xD;
   - Adding zoom in/out&#xD;
   - Adding a filter&#xD;
@@ -48,12 +52,13 @@ Thanks to @Meles Meles.&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1636815764</DateInstalled>
+  <DateInstalled>1641727772</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="circle" Target="CIRCLE" Default="no" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">yes</Config>
   <Config Name="WebUI" Target="8080" Default="1111" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1111</Config>
-  <Config Name="HOST" Target="HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DNS / DYNDNS" Target="HOST" Default="" Mode="" Description="HOST allows to put a dns. &#13;&#10;Ex: unraid.duckdns.org&#13;&#10;If you don't put anything, you don't need to fill in UNRAID_IP." Type="Variable" Display="always" Required="false" Mask="false">saminthedark.local</Config>
+  <Config Name="UNRAID_IP" Target="UNRAID_IP" Default="" Mode="" Description="Enter the IP address of Unraid.&#13;&#10;Ex: 192.168.100.24&#13;&#10;This will determine if a container has its own IP or not. Fill in only if HOST is filled in." Type="Variable" Display="always" Required="false" Mask="false">192.168.1.45</Config>
   <Config Name="data" Target="/data" Default="/var/local/emhttp/plugins/dynamix.docker.manager" Mode="ro" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/var/local/emhttp/plugins/dynamix.docker.manager</Config>
 </Container>
