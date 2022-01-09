@@ -46,19 +46,19 @@ Thanks to @Meles Meles.&#xD;
 &#xA0; - Add variable CIRCLE #This variable allows you to set or remove colored circles.&#xD;
 &#x200B;</Overview>
   <Category>Tools:Utilities</Category>
-  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <WebUI>http://[IP]:[PORT:1111]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/docker-webui/docker-webui.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/docker-webui/docker-webui.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1641727772</DateInstalled>
+  <DateInstalled>1641728414</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="circle" Target="CIRCLE" Default="no" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">yes</Config>
-  <Config Name="WebUI" Target="8080" Default="1111" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1111</Config>
-  <Config Name="DNS / DYNDNS" Target="HOST" Default="" Mode="" Description="HOST allows to put a dns. &#13;&#10;Ex: unraid.duckdns.org&#13;&#10;If you don't put anything, you don't need to fill in UNRAID_IP." Type="Variable" Display="always" Required="false" Mask="false">saminthedark.local</Config>
+  <Config Name="WebUI" Target="1111" Default="1111" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1111</Config>
+  <Config Name="DNS / DYNDNS" Target="HOST" Default="" Mode="" Description="HOST allows to put a dns. &#13;&#10;Ex: unraid.duckdns.org&#13;&#10;If you don't put anything, you don't need to fill in UNRAID_IP." Type="Variable" Display="always" Required="false" Mask="false">saminthedarl.local</Config>
   <Config Name="UNRAID_IP" Target="UNRAID_IP" Default="" Mode="" Description="Enter the IP address of Unraid.&#13;&#10;Ex: 192.168.100.24&#13;&#10;This will determine if a container has its own IP or not. Fill in only if HOST is filled in." Type="Variable" Display="always" Required="false" Mask="false">192.168.1.45</Config>
   <Config Name="data" Target="/data" Default="/var/local/emhttp/plugins/dynamix.docker.manager" Mode="ro" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/var/local/emhttp/plugins/dynamix.docker.manager</Config>
 </Container>
