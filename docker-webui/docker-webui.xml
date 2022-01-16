@@ -13,6 +13,23 @@
 &#xA0;&#xD;
 I made a small application that lists the docker containers that have a WebUI link.&#xD;
 &#xD;
+Environment variables:&#xD;
+  - CIRCLE:&#xD;
+      - yes : the background will have colored circles&#xD;
+      - empty : no colored circles&#xD;
+  &#xD;
+  - HOST : (ex : unraid.duckdns.org)&#xD;
+      - this variable allows you to put a DNS / DynDNS. This allows you to connect to this page outside your local network.&#xD;
+      - empty : the address to access it will remain the local address&#xD;
+  &#xD;
+  - UNRAID_IP :&#xD;
+      - if you have added a HOST, all your IP addresses will have your DNS / DynDNS even containers with another IP address. Enter your local IP address so different containers will keep their different address without it being replaced.&#xD;
+      - empty : the address to access it will remain the local address&#xD;
+  &#xD;
+  - TITLE :&#xD;
+      - This one allows you to change the title of the HTML page in the tab of your browser.&#xD;
+      - empty: Docker WebUI&#xD;
+&#xD;
 A few things that are essential for this application to work properly:&#xD;
 &#xA0; - Do not change the name of the application (Docker-WebUI). I have omitted the list with this name. If you change it then you will see it listed.&#xD;
 &#xA0; - container: /data, host: /var/local/emhttp/plugins/dynamix.docker.manager&#xD;
@@ -20,6 +37,9 @@ A few things that are essential for this application to work properly:&#xD;
 Have fun.&#xD;
 &#xA0;&#xD;
 ----------------------- Update ---------------------------&#xD;
+16 / 01 / 2022&#xD;
+  - Add TITLE to change the title of your page in the browser tab.&#xD;
+&#xD;
 09 / 01 / 2022&#xD;
   - Happy New Year&#xD;
   - Add UNRAID_IP: This will determine if a container has its own IP or not. Fill in only if HOST is filled in.&#xD;
@@ -47,18 +67,19 @@ Thanks to @Meles Meles.&#xD;
 &#x200B;</Overview>
   <Category>Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/docker-webui/docker-webui.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/Olprog59/unraid-templates/master/docker-webui/docker-webui.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/docker-webui/docker-webui.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1641729155</DateInstalled>
+  <DateInstalled>1642318417</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="circle" Target="CIRCLE" Default="no" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">yes</Config>
+  <Config Name="circle" Target="CIRCLE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">yes</Config>
   <Config Name="WebUI" Target="8080" Default="1111" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1111</Config>
-  <Config Name="DNS / DYNDNS" Target="HOST" Default="" Mode="" Description="HOST allows to put a dns. &#13;&#10;Ex: unraid.duckdns.org&#13;&#10;If you don't put anything, you don't need to fill in UNRAID_IP." Type="Variable" Display="always" Required="false" Mask="false">unraid.duckdns.org</Config>
-  <Config Name="UNRAID_IP" Target="UNRAID_IP" Default="" Mode="" Description="Enter the IP address of Unraid.&#13;&#10;Ex: 192.168.100.24&#13;&#10;This will determine if a container has its own IP or not. Fill in only if HOST is filled in." Type="Variable" Display="always" Required="false" Mask="false">192.168.100.24</Config>
+  <Config Name="DNS / DYNDNS" Target="HOST" Default="" Mode="" Description="HOST allows to put a DNS or DynDNS. &#13;&#10;Ex: unraid.duckdns.org&#13;&#10;If you don't put anything, you don't need to fill in UNRAID_IP." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="UNRAID_IP" Target="UNRAID_IP" Default="" Mode="" Description="Enter the local IP address of Unraid if HOST is filled.&#13;&#10;Ex: 192.168.100.24&#13;&#10;This will determine if a container has its own IP or not. Fill in only if HOST is filled in." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Title Page HTML" Target="TITLE" Default="Docker WebUI" Mode="" Description="If you want to change the title of the page in the tab. Put a title in this variable." Type="Variable" Display="always" Required="false" Mask="false">Docker WebUI</Config>
   <Config Name="data" Target="/data" Default="/var/local/emhttp/plugins/dynamix.docker.manager" Mode="ro" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/var/local/emhttp/plugins/dynamix.docker.manager</Config>
 </Container>
