@@ -1,1 +1,27 @@
-
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Go-Playground</Name>
+  <Repository>x1unix/go-playground</Repository>
+  <Registry>https://hub.docker.com/r/x1unix/go-playground</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Olprog59/unraid-templates</Support>
+  <Project>https://hub.docker.com/r/x1unix/go-playground</Project>
+  <Overview>mproved Go Playground powered by Monaco Editor and React</Overview>
+  <Category>Tools: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/go-playground/go.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646247506</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web" Target="8000" Default="8000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8888</Config>
+  <Config Name="APP_DEBUG" Target="APP_DEBUG" Default="false" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">false</Config>
+  <Config Name="APP_CLEAN_INTERVAL" Target="APP_CLEAN_INTERVAL" Default="10m" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">10m</Config>
+</Container>
