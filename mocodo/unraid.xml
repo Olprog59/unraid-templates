@@ -14,12 +14,16 @@
 En entr&#xE9;e, il prend une description textuelle des entit&#xE9;s et associations du mod&#xE8;le conceptuel de donn&#xE9;es (MCD).&#xD;
 En sortie, il produit son diagramme entit&#xE9;-association en SVG et son sch&#xE9;ma relationnel (MLD) en SQL, LaTeX, Markdown, etc.&#xD;
 &#xD;
+R&#xE9;cup&#xE9;rer le token dans les logs pour vous connecter.&#xD;
+&#xD;
 ---------------------------&#xD;
 &#xD;
 Mocodo is a software for teaching and designing relational databases.&#xD;
 &#xD;
 As input, it takes a textual description of the entities and associations of the conceptual data model (CDM).&#xD;
-As output, it produces its entity-association diagram in SVG and its relational schema (LDM) in SQL, LaTeX, Markdown, etc.</Overview>
+As output, it produces its entity-association diagram in SVG and its relational schema (LDM) in SQL, LaTeX, Markdown, etc.&#xD;
+&#xD;
+Get the token from the logs to connect.</Overview>
   <Category>Productivity: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8888]</WebUI>
   <TemplateURL/>
