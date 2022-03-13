@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>mocodo-mcd</Name>
   <Repository>olprog/mocodo:latest</Repository>
-  <Registry>olprog/mocodo</Registry>
+  <Registry>https://hub.docker.com/r/olprog/mocodo</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
