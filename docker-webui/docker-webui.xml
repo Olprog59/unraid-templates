@@ -12,6 +12,7 @@
   <Overview>Hello to all of you,&#xD;
 &#xA0;&#xD;
 I made a small application that lists the docker containers that have a WebUI link.&#xD;
+Please also support me of this beautiful project through a PayPal donation.&#xD;
 &#xD;
 Environment variables:&#xD;
   - CIRCLE:&#xD;
@@ -87,8 +88,8 @@ Thanks to @Meles Meles.&#xD;
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1659348965</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>If you like my work please</DonateText>
+  <DonateLink>https://paypal.me/OlProG</DonateLink>
   <Requires/>
   <Config Name="circle" Target="CIRCLE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">yes</Config>
   <Config Name="WebUI" Target="8080" Default="1111" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1111</Config>
