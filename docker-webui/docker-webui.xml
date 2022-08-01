@@ -3,10 +3,10 @@
   <Name>Docker-WebUI</Name>
   <Repository>olprog/unraid-docker-webui</Repository>
   <Registry>https://hub.docker.com/r/olprog/unraid-docker-webui</Registry>
-  <Network>bridge</Network>
+  <Network>proxynet</Network>
   <MyIP/>
   <Shell>sh</Shell>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Support>https://forums.unraid.net/topic/113418-support-docker-webui/</Support>
   <Project/>
   <Overview>Hello to all of you,&#xD;
@@ -34,9 +34,17 @@ A few things that are essential for this application to work properly:&#xD;
 &#xA0; - Do not change the name of the application (Docker-WebUI). I have omitted the list with this name. If you change it then you will see it listed.&#xD;
 &#xA0; - container: /data, host: /var/local/emhttp/plugins/dynamix.docker.manager&#xD;
 &#xA0;&#xD;
+Add a folder share for configuration. Inside, a file (subdomains.yml) will store the subdomains you will change in the application.&#xD;
+- container: /config, host: /mnt/user/docker/Docker-WebUI/config&#xD;
+&#xD;
 Have fun.&#xD;
 &#xA0;&#xD;
 ----------------------- Update ---------------------------&#xD;
+01 / 08 / 2022&#xD;
+- Adding the installation of the application (service worker). Condition to respect =&amp;gt; HTTPS&#xD;
+- Add a choice of URL per container: LAN or WAN&#xD;
+- Possibility to put a sub-domain per container.&#xD;
+&#xD;
 05 / 06 / 2022&#xD;
   - Fixed favicon display issue.&#xD;
 &#xD;
@@ -78,15 +86,16 @@ Thanks to @Meles Meles.&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1651947647</DateInstalled>
+  <DateInstalled>1659348965</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="circle" Target="CIRCLE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">yes</Config>
   <Config Name="WebUI" Target="8080" Default="1111" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1111</Config>
-  <Config Name="DNS / DYNDNS" Target="HOST" Default="" Mode="" Description="HOST allows to put a DNS or DynDNS. &#13;&#10;Ex: unraid.duckdns.org&#13;&#10;If you don't put anything, you don't need to fill in UNRAID_IP." Type="Variable" Display="always" Required="false" Mask="false">saminthedark.local</Config>
-  <Config Name="UNRAID_IP" Target="UNRAID_IP" Default="" Mode="" Description="Enter the local IP address of Unraid if HOST is filled.&#13;&#10;Ex: 192.168.100.24&#13;&#10;This will determine if a container has its own IP or not. Fill in only if HOST is filled in." Type="Variable" Display="always" Required="false" Mask="false">192.168.1.45</Config>
+  <Config Name="DYNDNS" Target="HOST" Default="" Mode="" Description="HOST allows to put a DNS or DynDNS. &#13;&#10;Ex: unraid.duckdns.org&#13;&#10;If you don't put anything, you don't need to fill in UNRAID_IP." Type="Variable" Display="always" Required="true" Mask="false">example.duckdns.org</Config>
+  <Config Name="UNRAID_IP" Target="UNRAID_IP" Default="" Mode="" Description="Enter the local IP address of Unraid if HOST is filled.&#13;&#10;Ex: 192.168.100.24&#13;&#10;This will determine if a container has its own IP or not. Fill in only if HOST is filled in." Type="Variable" Display="always" Required="false" Mask="false">192.168.10.2</Config>
   <Config Name="Title Page HTML" Target="TITLE" Default="Docker WebUI" Mode="" Description="If you want to change the title of the page in the tab. Put a title in this variable." Type="Variable" Display="always" Required="false" Mask="false">Docker WebUI</Config>
   <Config Name="PORT_INTERNAL_DOCKER" Target="PORT" Default="8080" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Config" Target="/config" Default="/mnt/user/docker/Docker-WebUI/config" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/Docker-WebUI/config</Config>
   <Config Name="data" Target="/data" Default="/var/local/emhttp/plugins/dynamix.docker.manager" Mode="ro" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/var/local/emhttp/plugins/dynamix.docker.manager</Config>
 </Container>
