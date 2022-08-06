@@ -41,7 +41,7 @@ Add a folder share for configuration. Inside, a file (subdomains.yml) will store
 Have fun.&#xD;
 &#xA0;&#xD;
 </Overview>
-<Change>
+<Changes>
 06 / 08 / 2022&#xD;
 - I went back to a simpler version. People who want to use applications with a domain or subdomains can add or set the Variable the domain in the Variable HOST.&#xD;
 &#xD;
