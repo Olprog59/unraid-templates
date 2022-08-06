@@ -30,7 +30,10 @@ Environment variables:&#xD;
   - TITLE :&#xD;
       - This one allows you to change the title of the HTML page in the tab of your browser.&#xD;
       - empty: Docker WebUI&#xD;
-&#xD;
+  &#xD;
+  - WAN : (true or false)&#xD;
+      - If you have applications using a domain or subdomains &#xD;
+&#xD;&#xD;
 A few things that are essential for this application to work properly:&#xD;
 &#xA0; - Do not change the name of the application (Docker-WebUI). I have omitted the list with this name. If you change it then you will see it listed.&#xD;
 &#xA0; - container: /data, host: /var/local/emhttp/plugins/dynamix.docker.manager&#xD;
@@ -40,7 +43,11 @@ Add a folder share for configuration. Inside, a file (subdomains.yml) will store
 &#xD;
 Have fun.&#xD;
 &#xA0;&#xD;
------------------------ Update ---------------------------&#xD;
+</Overview>
+<Change>
+06 / 08 / 2022&#xD;
+- I went back to a simpler version. People who want to use applications with a domain or sub-domains can add the Variable WAN.&#xD;
+&#xD;
 01 / 08 / 2022&#xD;
 - Adding the installation of the application (service worker). Condition to respect =&amp;gt; HTTPS&#xD;
 - Add a choice of URL per container: LAN or WAN&#xD;
@@ -79,7 +86,7 @@ Thanks to @Meles Meles.&#xD;
 &#xD;
 31 / 10 / 2021:&#xD;
 &#xA0; - Add variable CIRCLE #This variable allows you to set or remove colored circles.&#xD;
-&#x200B;</Overview>
+&#x200B;</Changes>
   <Category>Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Olprog59/unraid-templates/master/docker-webui/docker-webui.xml</TemplateURL>
@@ -98,5 +105,6 @@ Thanks to @Meles Meles.&#xD;
   <Config Name="Title Page HTML" Target="TITLE" Default="Docker WebUI" Mode="" Description="If you want to change the title of the page in the tab. Put a title in this variable." Type="Variable" Display="always" Required="false" Mask="false">Docker WebUI</Config>
   <Config Name="PORT_INTERNAL_DOCKER" Target="PORT" Default="8080" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Config" Target="/config" Default="/mnt/user/docker/Docker-WebUI/config" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/Docker-WebUI/config</Config>
+  <Config Name="WAN" Target="WAN" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="data" Target="/data" Default="/var/local/emhttp/plugins/dynamix.docker.manager" Mode="ro" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/var/local/emhttp/plugins/dynamix.docker.manager</Config>
 </Container>
