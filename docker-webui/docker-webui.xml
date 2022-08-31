@@ -97,7 +97,7 @@ Thanks to @Meles Meles.&#xD;
   <Requires/>
   <Config Name="circle" Target="CIRCLE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">yes</Config>
   <Config Name="WebUI" Target="8080" Default="1111" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1111</Config>
-  <Config Name="DYNDNS" Target="HOST" Default="" Mode="" Description="HOST allows to put a DNS or DynDNS. &#13;&#10;Ex: unraid.duckdns.org&#13;&#10;If you don't put anything, you don't need to fill in UNRAID_IP." Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DOMAIN or DYNDNS" Target="HOST" Default="" Mode="" Description="HOST allows to put a DOMAIN or DynDNS. &#13;&#10;Ex: unraid.duckdns.org&#13;&#10;If you don't put anything, you don't need to fill in UNRAID_IP." Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="UNRAID_IP" Target="UNRAID_IP" Default="" Mode="" Description="Enter the local IP address of Unraid if HOST is filled.&#13;&#10;Ex: 192.168.100.24&#13;&#10;This will determine if a container has its own IP or not. Fill in only if HOST is filled in." Type="Variable" Display="always" Required="false" Mask="false">192.168.10.2</Config>
   <Config Name="Title Page HTML" Target="TITLE" Default="Docker WebUI" Mode="" Description="If you want to change the title of the page in the tab. Put a title in this variable." Type="Variable" Display="always" Required="false" Mask="false">Docker WebUI</Config>
   <Config Name="PORT_INTERNAL_DOCKER" Target="PORT" Default="8080" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">8080</Config>
