@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Excalidraw</Name>
+  <Repository>excalidraw/excalidraw</Repository>
+  <Registry>https://hub.docker.com/r/excalidraw/excalidraw</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/excalidraw/excalidraw/issues</Support>
+  <Project>https://github.com/excalidraw/excalidraw</Project>
+  <Overview>Virtual whiteboard for sketching hand-drawn like diagrams.&#xD;
+Collaborative and end-to-end encrypted.(1)&#xD;
+&#xD;
+The Docker image is free of analytics and other tracking libraries.&#xD;
+&#xD;
+---&#xD;
+&#xD;
+1. At the moment, self-hosting your own instance doesn't support sharing or collaboration features.&#xD;
+&#xD;
+We are working towards providing a full-fledged solution for self-hosting your own Excalidraw.</Overview>
+  <Category>Productivity: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:5432]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/excalidraw/excalidraw.ico</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1669202459</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port HTTP" Target="80" Default="5432" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5432</Config>
+</Container>
