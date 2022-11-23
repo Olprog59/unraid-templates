@@ -20,7 +20,7 @@ The Docker image is free of analytics and other tracking libraries.&#xD;
 &#xD;
 We are working towards providing a full-fledged solution for self-hosting your own Excalidraw.</Overview>
   <Category>Productivity: Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:5432]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/excalidraw/excalidraw.ico</Icon>
   <ExtraParams/>
