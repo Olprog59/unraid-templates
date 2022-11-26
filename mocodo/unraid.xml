@@ -2,28 +2,34 @@
 <Container version="2">
   <Name>mocodo-mcd</Name>
   <Repository>olprog/mocodo:latest</Repository>
-  <Registry>https://hub.docker.com/r/olprog/mocodo</Registry>
+  <Registry>olprog/mocodo</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://github.com/laowantong/mocodo</Support>
   <Project>https://rawgit.com/laowantong/mocodo/master/doc/fr_refman.html#utiliser_mocodo_en_ligne_de_commande</Project>
   <Overview>Mocodo est un logiciel d'aide &#xE0; l'enseignement et &#xE0; la conception des bases de donn&#xE9;es relationnelles.&#xD;
 &#xD;
 En entr&#xE9;e, il prend une description textuelle des entit&#xE9;s et associations du mod&#xE8;le conceptuel de donn&#xE9;es (MCD).&#xD;
 En sortie, il produit son diagramme entit&#xE9;-association en SVG et son sch&#xE9;ma relationnel (MLD) en SQL, LaTeX, Markdown, etc.&#xD;
 &#xD;
-R&#xE9;cup&#xE9;rer le token dans les logs pour vous connecter.&#xD;
+Site officiel : https://www.mocodo.net&#xD;
+Github Officiel : https://github.com/laowantong/mocodo&#xD;
 &#xD;
 ---------------------------&#xD;
 &#xD;
-Mocodo is a software for teaching and designing relational databases.&#xD;
+Mocodo is a software to help teaching and designing relational databases.&#xD;
 &#xD;
 As input, it takes a textual description of the entities and associations of the conceptual data model (CDM).&#xD;
 As output, it produces its entity-association diagram in SVG and its relational schema (LDM) in SQL, LaTeX, Markdown, etc.&#xD;
 &#xD;
-Get the token from the logs to connect.</Overview>
+Official website : https://www.mocodo.net&#xD;
+Official Github : https://github.com/laowantong/mocodo</Overview>
+<Changes>
+26 / 11 / 2022&#xD;
+Suppression de jupyter notebook  => Utilisation du site Web&#xD;
+</Changes>
   <Category>Productivity: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8888]</WebUI>
   <TemplateURL/>
@@ -31,10 +37,9 @@ Get the token from the logs to connect.</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1647118827</DateInstalled>
+  <DateInstalled>1669501203</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="WebUI" Target="8888" Default="8888" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8888</Config>
-  <Config Name="path" Target="/root/mocodo" Default="/mnt/user/mocodo/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/mocodo/</Config>
+  <Config Name="WebUI" Target="80" Default="8888" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8888</Config>
 </Container>
