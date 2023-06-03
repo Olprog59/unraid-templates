@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>YggTorrent</Name>
+  <Repository>olprog/ygg</Repository>
+  <Registry>https://hub.docker.com/r/olprog/ygg</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>This application allows you to call up the RSS feed of the yggtorrent site.&#xD;
+&#xD;
+It only stores RSS feeds. When there is a change, the application updates itself using the TIME_RELOAD variable and deletes information that is no longer in the feed.&#xD;
+&#xD;
+The first update can take a long time, as the application calls up all the RSS feeds even if you don't want all the information.&#xD;
+&#xD;
+In the graphical interface, you can choose to display the feeds you want by going to Settings. </Overview>
+  <Category>Other:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Olprog59/unraid-templates/master/search-and-sort-movies/search-and-sort-movies.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/sam-docker/yggtorrent/main/ui/public/yggtorrent.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1685819882</DateInstalled>
+  <DonateText>If you like my work please</DonateText>
+  <DonateLink>https://paypal.me/OlProG</DonateLink>
+  <Requires/>
+  <Config Name="PASSKEY" Target="PASSKEY" Default="" Mode="" Description="The passkey can be found in: my account on yygtorrent" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="TIME_RELOAD" Target="TIME_RELOAD" Default="1h" Mode="" Description="Variable that determines the RSS feed refresh time. Choose between m(minutes) and h(hour). Ex: 10m or 2h, ..." Type="Variable" Display="always" Required="false" Mask="false">1h</Config>
+  <Config Name="PORT" Target="3000" Default="3000" Mode="tcp" Description="This is the port for the web page to access the UI. Default: 3000" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="PORT Server" Target="8080" Default="8080" Mode="tcp" Description="This is the port of the server requesting the yygtorrent RSS feed. It is important if you are using reverse proxy. Default 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="API_URL" Target="API_URL" Default="https://myserver.com" Mode="" Description="URL of the UI if you are using a reverse proxy" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>
