@@ -7,9 +7,11 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/139995-support-yggtorrent/#comment-1268149</Support>
   <Project/>
-  <Overview>This application allows you to call up the RSS feed of the yggtorrent site.&#xD;
+    <Overview>This application allows you to call up the RSS feed of the yggtorrent site.&#xD;
+&#xD;
+This is not a download application, just an application that retrieves the RSS feed from the YggTorrent site in a nicer way. You can click on the image to go to the site page.&#xD;
 &#xD;
 It only stores RSS feeds. When there is a change, the application updates itself using the TIME_RELOAD variable and deletes information that is no longer in the feed.&#xD;
 &#xD;
