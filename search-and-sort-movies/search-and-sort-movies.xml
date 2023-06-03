@@ -22,6 +22,8 @@ Choose your Volumes :&#xD;
     /movies&#xD;
     /series&#xD;
 &#xD;
+</Overview>
+  <changes>
 ***02 June 2023***:&#xD;
 Improved sorting.&#xD;
 A FORMAT_FILE environment variable has been added:&#xD;
@@ -38,7 +40,8 @@ Example: **Original File**: My.Favourite.Movie.2023.4K.MULTi.2160p.HDR.WEB.EAC3.
 - `FORMAT_FILE = s, year, name` =&amp;gt; "2023 mon film prefere.mkv"&#xD;
 - ...&#xD;
 &#xD;
-**FORMAT_FILE affects films and series.**</Overview>
+**FORMAT_FILE affects films and series.**
+  </changes>
   <Category>Other:</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/Olprog59/unraid-templates/master/search-and-sort-movies/search-and-sort-movies.xml</TemplateURL>
@@ -47,8 +50,8 @@ Example: **Original File**: My.Favourite.Movie.2023.4K.MULTi.2160p.HDR.WEB.EAC3.
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1685817525</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>If you like my work please</DonateText>
+  <DonateLink>https://paypal.me/OlProG</DonateLink>
   <Requires/>
   <Config Name="Be Sorted" Target="/be_sorted" Default="/mnt/user/dlna/be_sorted/" Mode="rw" Description="Conteneur Path: /be_sorted" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/be_sorted/</Config>
   <Config Name="Series" Target="/series" Default="/mnt/user/dlna/series/" Mode="rw" Description="Conteneur Path: /series" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/series/</Config>
