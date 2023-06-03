@@ -18,8 +18,8 @@ The first update can take a long time, as the application calls up all the RSS f
 In the graphical interface, you can choose to display the feeds you want by going to Settings. </Overview>
   <Category>Other:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/Olprog59/unraid-templates/master/search-and-sort-movies/search-and-sort-movies.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/sam-docker/yggtorrent/main/ui/public/yggtorrent.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/Olprog59/unraid-templates/master/yggtorrent/yggtorrent.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/yggtorrent/yggtorrent.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
