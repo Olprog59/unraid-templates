@@ -3,7 +3,7 @@
   <Name>search-and-sort-movies</Name>
   <Repository>olprog/search-and-sort-movies</Repository>
   <Registry>https://hub.docker.com/r/olprog/search-and-sort-movies/</Registry>
-  <Network>bridge</Network>
+  <Network>none</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -20,54 +20,38 @@ Choose your Volumes :&#xD;
 &#xD;
     /be_sorted&#xD;
     /movies&#xD;
-    /series</Overview>
+    /series&#xD;
+&#xD;
+***02 June 2023***:&#xD;
+Improved sorting.&#xD;
+A FORMAT_FILE environment variable has been added:&#xD;
+- the character to be chosen, by default the "-". if you want a space then put an "s".&#xD;
+- `name`: the name of the file&#xD;
+- `year`: the year if it exists in the original file&#xD;
+- `resolution`: the resolution of the video if it exists in the original file&#xD;
+&#xD;
+Example: **Original File**: My.Favourite.Movie.2023.4K.MULTi.2160p.HDR.WEB.EAC3.x265.mkv&#xD;
+- `FORMAT_FILE = -, name (default)` =&amp;gt; mon-film-prefere.mkv&#xD;
+- `FORMAT_FILE = -, name, year` =&amp;gt; my-film-prefere-2023.mkv&#xD;
+- `FORMAT_FILE = -, name, year, resolution` =&amp;gt; my-film-prefere-2023-4k.mkv&#xD;
+- `FORMAT_FILE = _, name, year, resolution` =&amp;gt; my-film-preference-2023_4k.mkv&#xD;
+- `FORMAT_FILE = s, year, name` =&amp;gt; "2023 mon film prefere.mkv"&#xD;
+- ...&#xD;
+&#xD;
+**FORMAT_FILE affects films and series.**</Overview>
   <Category>Other:</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/search-and-sort-movies/search-and-sort-movies.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/Olprog59/unraid-templates/master/search-and-sort-movies/search-and-sort-movies.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Olprog59/unraid-templates/main/search-and-sort-movies/search-and-sort-movies.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1631002122</DateInstalled>
+  <DateInstalled>1685817525</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Description>This application will allow you to sort films and series. It will clean up the names and move them to the folder you want.&#xD;
-&#xD;
-Ex:&#xD;
-&#xD;
-    /be_sorted/movie_sam_2020_to$http://sAm.EN-01.mkv =&amp;gt; /movies/movie-sam-2020.mkv&#xD;
-    /be_sorted/serie_S1_e12_qWerTy_aZerty.mKv =&amp;gt; /series/fringe/season-1/fringe-S01-E12.mkv&#xD;
-&#xD;
-Choose your Volumes :&#xD;
-&#xD;
-    /be_sorted&#xD;
-    /movies&#xD;
-    /series</Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish/>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/dlna/be_sorted/</HostDir>
-      <ContainerDir>/be_sorted</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/dlna/series/</HostDir>
-      <ContainerDir>/series</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/dlna/movies/</HostDir>
-      <ContainerDir>/movies</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment/>
-  <Labels/>
-  <Config Name="Be Sorted" Target="/be_sorted" Default="/mnt/user/dlna/be_sorted/" Mode="rw" Description="Conteneur Path: /be_sorted" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/dlna/be_sorted/</Config>
-  <Config Name="Series" Target="/series" Default="/mnt/user/dlna/series/" Mode="rw" Description="Conteneur Path: /series" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/dlna/series/</Config>
-  <Config Name="Movies" Target="/movies" Default="/mnt/user/dlna/movies/" Mode="rw" Description="Conteneur Path: /movies" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/dlna/movies/</Config>
+  <Config Name="Be Sorted" Target="/be_sorted" Default="/mnt/user/dlna/be_sorted/" Mode="rw" Description="Conteneur Path: /be_sorted" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/be_sorted/</Config>
+  <Config Name="Series" Target="/series" Default="/mnt/user/dlna/series/" Mode="rw" Description="Conteneur Path: /series" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/series/</Config>
+  <Config Name="Movies" Target="/movies" Default="/mnt/user/dlna/movies/" Mode="rw" Description="Conteneur Path: /movies" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/movies/</Config>
+  <Config Name="FORMAT_FILE" Target="FORMAT_FILE" Default="-, name" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">-, name</Config>
 </Container>
