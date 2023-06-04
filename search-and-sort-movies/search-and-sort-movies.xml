@@ -23,7 +23,7 @@ Choose your Volumes :&#xD;
     /series&#xD;
 &#xD;
 </Overview>
-  <changes>
+  <Changes>
 ***02 June 2023***:&#xD;
 Improved sorting.&#xD;
 A FORMAT_FILE environment variable has been added:&#xD;
@@ -41,7 +41,7 @@ Example: **Original File**: My.Favourite.Movie.2023.4K.MULTi.2160p.HDR.WEB.EAC3.
 - ...&#xD;
 &#xD;
 **FORMAT_FILE affects films and series.**
-  </changes>
+  </Changes>
   <Category>Other:</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/Olprog59/unraid-templates/master/search-and-sort-movies/search-and-sort-movies.xml</TemplateURL>
