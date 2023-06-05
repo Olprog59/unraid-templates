@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>YggTorrent</Name>
+  <Beta>True</Beta>
   <Repository>olprog/ygg</Repository>
   <Registry>https://hub.docker.com/r/olprog/ygg</Registry>
   <Network>bridge</Network>
