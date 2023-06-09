@@ -18,7 +18,18 @@ It only stores RSS feeds. When there is a change, the application updates itself
 &#xD;
 The first update can take a long time, as the application calls up all the RSS feeds even if you don't want all the information.&#xD;
 &#xD;
-In the graphical interface, you can choose to display the feeds you want by going to Settings. </Overview>
+In the graphical interface, you can choose to display the feeds you want by going to Settings.&#xD;
+&#xD;
+&#xD;
+09 / 06 / 2023&#xD;
+  - Image optimization with a maximum height reduction to 300px (database size divided by ~23: from 1.4GB to 60MB)&#xD;
+  - Addition of two languages: French and English&#xD;
+  - Switch from the Qwik front-end framework to ReactJs (removal of the Node.js server)&#xD;
+  - Overall performance improvement&#xD;
+  - Addition of an SSL connection between the container and the YggTorrent site&#xD;
+  - Resolution of the information update issue&#xD;
+  - Clean design optimized for mobile&#xD;
+  </Overview>
   <Changes>
     09 / 06 / 2023&#xD;
   - Image optimization with a maximum height reduction to 300px (database size divided by ~23: from 1.4GB to 60MB)&#xD;
