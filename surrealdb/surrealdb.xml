@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>surrealdb</Name>
+  <Repository>surrealdb/surrealdb:latest</Repository>
+  <Registry>https://hub.docker.com/r/surrealdb/surrealdb</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/surrealdb/surrealdb/issues</Support>
+  <Project>https://surrealdb.com/</Project>
+  <Overview>SurrealDB makes building and scaling realtime apps dramatically quicker and easier. Get started by installing the server, and jump into our getting started guide to learn how to insert and query data in SurrealDB in minutes.&#xD;
+&#xD;
+To quickly test out SurrealDB and SurrealQL functionality, we've included demo dataset which you can download and import into your SurrealDB instance.</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/surrealdb/surrealdb/main/img/icon.png</Icon>
+  <ExtraParams>--pull always</ExtraParams>
+  <PostArgs>start --auth --user YOUR_USER --pass YOUR_PASSWORD file:/mydata/surreal.db</PostArgs>
+  <CPUset/>
+  <DateInstalled>1703235371</DateInstalled>
+  <DonateText>If you like my work please</DonateText>
+  <DonateLink>https://paypal.me/OlProG</DonateLink>
+  <Branch>
+      <Tag>latest</Tag>
+      <TagDescription>The most recent stable version of SurrealDB, ideal for production use. Includes the latest official features and bug fixes.</TagDescription>
+  </Branch>
+  <Branch>
+      <Tag>nightly</Tag>
+      <TagDescription>Development version of SurrealDB, featuring the very latest updates. Great for testing and previewing new features, but may be unstable.</TagDescription>
+  </Branch>
+  <Requires/>
+  <Config Name="PORT" Target="8000" Default="8000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="Data" Target="/mydata" Default="/mnt/user/surrealdb/data" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/surrealdb</Config>
+</Container>
